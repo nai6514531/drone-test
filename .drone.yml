@@ -1,0 +1,10 @@
+workspace:
+  base: /go
+  path: github.com/nai6514531/drone-test.git
+
+pipeline:
+  build:
+    image: golang:latest
+    commands:
+      - go run main.go
+      - go test
